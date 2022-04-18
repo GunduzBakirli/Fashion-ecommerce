@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Basket from "./components/Basket";
+import Login from "./components/Login";
+import AllProducts from "./components/AllProducts";
+import axios from "axios";
+import { useSelector, useDispatch } from "react-redux";
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/emilfermanli/db/product")
+      .then((res) => res.data)
+      .then((res) => dispatch({ type: "All_Data", payload: res }));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/all-products" element={<AllProducts />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/basket" element={<Basket />} />
+      </Routes>
+    </>
   );
 }
 
