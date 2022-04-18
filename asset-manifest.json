@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Fashion-ecommerce/static/css/main.27be4bfb.css",
+    "main.js": "/Fashion-ecommerce/static/js/main.6b1e31b5.js",
+    "static/media/summer.jpg": "/Fashion-ecommerce/static/media/summer.a03cac248df027d64b49.jpg",
+    "static/media/lady.jpg": "/Fashion-ecommerce/static/media/lady.ce388a0260418375194c.jpg",
+    "static/media/girl.jpg": "/Fashion-ecommerce/static/media/girl.4d177b7e728a0f2731b4.jpg",
+    "static/media/styleee.jpg": "/Fashion-ecommerce/static/media/styleee.9c010f79b68c150e65f2.jpg",
+    "static/media/Lato-Regular.ttf": "/Fashion-ecommerce/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/heart.gif": "/Fashion-ecommerce/static/media/heart.f6b174b8bbccde6892c9.gif",
+    "index.html": "/Fashion-ecommerce/index.html",
+    "main.27be4bfb.css.map": "/Fashion-ecommerce/static/css/main.27be4bfb.css.map",
+    "main.6b1e31b5.js.map": "/Fashion-ecommerce/static/js/main.6b1e31b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27be4bfb.css",
+    "static/js/main.6b1e31b5.js"
+  ]
+}
